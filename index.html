@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+print("🏰 THE LOST KINGDOM ADVENTURE 🏰")
+print("You wake up in a mysterious forest.")
+print("You see two paths in front of you.")
+
+choice = input("Do you go LEFT or RIGHT? ").lower()
+
+if choice == "left":
+    print("\nYou find an old castle.")
+    action = input("Do you ENTER the castle or RUN away? ").lower()
+
+    if action == "enter":
+        print("\nYou enter the castle and find a treasure chest! 💰")
+        print("You win the game! 🎉")
+    else:
+        print("\nYou run away safely. Game over.")
+
+elif choice == "right":
+    print("\nYou meet a giant dragon! 🐉")
+    action = input("Do you FIGHT or ESCAPE? ").lower()
+
+    if action == "fight":
+        print("\nYou defeat the dragon and become a hero! ⚔️")
+        print("You win the game! 🎉")
+    else:
+        print("\nYou escaped, but the adventure continues...")
+
+else:
+    print("\nYou stand still until night comes. Game over.")
+<script src="script.js"></script>
+</body>
+</html>
